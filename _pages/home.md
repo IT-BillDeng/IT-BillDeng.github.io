@@ -7,40 +7,40 @@ redirect_from:
   - /home.html
 ---
 
-
+## 🎯 What I'm Looking For
+Applying for PhD programs (targeting 2026 Fall) and seeking advisors in computer vision and autonomous driving. Especially interested in perception and representation learning for robust driving stacks, and bringing generative/vision-language techniques into scene understanding.
 
 ## 🔍 Research Interests
-Generative models (diffusion) for medical imaging, segmentation with vision-language priors, multi-modal representation learning, and efficient deployment of CV models.
+Autonomous driving perception (multi-sensor fusion/BEV/3D tracking) and planning/control for Ackermann vehicles; generative and vision-language models to improve robustness, domain adaptation, and uncertainty in driving scenes; diffusion/SAM-style methods for medical imaging generation and segmentation.
 
 ## 📰 Selected Publications
-<ol>
-<li><strong>DiffLGE</strong>: Diffusion-based synthesis of Late Gadolinium Enhancement (LGE) CMR without contrast, leveraging multimodal conditioning (CINE + T1 mapping). <em>IEEE BIBM 2024</em>.</li>
-<li><strong>Text-Prompted EAT Segmentation</strong>: Adapting SAM with text prompts for epicardial adipose tissue segmentation in cardiac MRI. <em>IEEE BIBM 2024</em>.</li>
-<li><strong>RRT*ASV</strong>: Improved RRT* path planning for Ackermann steering vehicles with constrained kinematics. <em>Expert Systems With Applications, 2025</em>.</li>
-</ol>
+
+1. **DiffLGE**: Diffusion-based LGE CMR synthesis with CINE + T1 conditioning; outperforms GAN baselines on private cohort. *IEEE BIBM 2024*.
+2. **Text-Prompted EAT Segmentation**: SAM adaptation with text prompts + pseudo-mask augmentation for data-scarce cardiac MRI. *IEEE BIBM 2024*.
+3. **RRT\*ASV**: Road-network seeded, PP/Dubins-guided RRT* variant; achieves 0.025 m lateral error and cuts controller load by 60.66%. *Expert Systems With Applications, 2025*.
+
 <p style="margin-top:-0.7em"><a href="/publications/">Full list →</a></p>
 
 ## 🚀 Highlighted Projects
-- <strong>DiffLGE</strong>: Stable-diffusion based pipeline; synthesizes high-quality LGE images without contrast agents.
-- <strong>Text-Prompted Cardiac MRI Segmentation</strong>: Vision-language pretraining + pseudo-label augmentation for scarce EAT labels.
-- <strong>3D Medical Report Generation</strong>: Mixture-of-experts vision-language framework for automatic structured clinical reporting (in progress).
-- <strong>RRT* Path Planning</strong>: Kinematics-aware pruning + Dijkstra pre-processing to speed convergence.
+- **DiffLGE**: Stable-diffusion pipeline conditioned on CINE + T1 mapping to synthesize high-quality LGE images without contrast agents.
+- **Text-Prompted Cardiac MRI Segmentation**: Vision-language pretraining (SAM adaptation) with pseudo-label augmentation for scarce EAT labels.
+- **3D Medical Report Generation**: Mixture-of-experts vision-language framework for automatic structured clinical reporting (in progress).
+- **RRT\* Path Planning**: Road-network graph + Dijkstra seeding, PP/Dubins-guided RRT* variant to reduce sharp turns; lowers lateral tracking error and controller load for Ackermann vehicles.
+- **LiDAR-Camera 3D Object Tracking** (in progress): Multi-sensor fusion for autonomous driving scenes; aligning camera and LiDAR to improve multi-object tracking robustness in cluttered environments.
 
-## 🗓️ Recent News
+<!-- ## 🗓️ Recent News
 - 2025-08 Preparing manuscript on multi-modal diffusion conditioning.
 - 2025-06 Progressed 3D report generation MoE prototype.
-- 2024-12 Two papers accepted at IEEE BIBM 2024.
+- 2024-12 Two papers accepted at IEEE BIBM 2024. -->
 
 ## 🛠️ Skills Snapshot
-**Programming**: Python, C++, PyTorch, OpenCV, Docker  
-**Models/Frameworks**: Diffusion (Stable Diffusion adaptation), SAM, Vision-Language (CLIP-style), YOLO series  
-**Other**: Git, CUDA basics, LaTeX  
-**Languages**: Mandarin (native), English, Cantonese, Japanese
+**Programming**: Python, C++  
+**Models/Frameworks**: Diffusion Model, SAM, Vision-Language Model  
+**Other**: Git, Docker, LaTeX, ROS  
+**Languages**: Mandarin (native), English, Cantonese (native), Japanese  
 
-## 🎯 What I'm Looking For
-Collaboration on diffusion or VLMs for medical imaging, especially data-efficient generation, segmentation, or report synthesis.
 
 ## 📬 Contact
-Best via email (academic). Feel free to reference any repository or paper in the subject for quicker context.
+Best via email (academic): <a href="mailto:dengysh23@sjtu.edu.cn">dengysh23@sjtu.edu.cn</a>. Feel free to reference any repository or paper in the subject for quicker context.
 
 <p style="font-size:0.75em;opacity:0.7">Last updated: {{ site.time | date: '%Y-%m-%d' }}</p>
