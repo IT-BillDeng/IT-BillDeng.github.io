@@ -7,30 +7,24 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-
-# Create a non-root user with UID 1000
-RUN groupadd -g 1000 vscode && \
-    useradd -m -u 1000 -g vscode vscode
-
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Set permissions for the working directory
-RUN chown -R vscode:vscode /usr/src/app
+# Keep bundler/gems out of the mounted project dir to avoid host-specific vendor/ bundles
+ENV GEM_HOME=/usr/local/bundle \
+    BUNDLE_PATH=/usr/local/bundle \
+    BUNDLE_APP_CONFIG=/usr/local/bundle/.bundle \
+    BUNDLE_BIN=/usr/local/bundle/bin \
+    PATH=/usr/local/bundle/bin:$PATH
 
-# Switch to the non-root user
-USER vscode
-
-# Copy Gemfile into the container (necessary for `bundle install`)
-COPY Gemfile ./
+# Copy Gemfile and lockfile so bundle installs the exact, locked versions
+COPY Gemfile Gemfile.lock ./
 
 
 
 # Install bundler and dependencies
-RUN gem install connection_pool:2.5.0
-RUN gem install bundler:2.3.26
+RUN gem install bundler:2.4.20
 RUN bundle install
 
 # Command to serve the Jekyll site
 CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w"]
-
