@@ -65,9 +65,7 @@ layout: default
 
         {% if page.bibtex %}
           <div class="code-header">BibTeX</div>
-          <div class="highlight">
-            <pre class="highlight language-bibtex"><code class="language-bibtex">{{ page.bibtex | strip | escape }}</code></pre>
-          </div>
+          {% highlight bibtex %}{{ page.bibtex | strip }}{% endhighlight %}
         {% elsif page.citation %}
           <p style="font-size: smaller">{{ page.citation }}</p>
         {% endif %}

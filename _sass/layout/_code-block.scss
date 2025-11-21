@@ -1,6 +1,6 @@
 .code-header {
   font-size: 0.9rem;
-  margin: 0 0 0.35em 0;
+  margin: 0.1em 0 0.25em 0;
   color: var(--global-text-color, #444);
   font-weight: 600;
 }
@@ -14,15 +14,53 @@
 
   pre {
     margin: 0;
-    background: var(--global-code-background-color, #f7f7f7);
-    border: 1px solid var(--global-border-color, #e0e0e0);
-    border-radius: 6px;
-    padding: 0.75rem 1rem;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
     color: var(--global-code-text-color, #2b2b2b);
     font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 0.95rem;
     line-height: 1.45;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    box-shadow: none;
     overflow-x: auto;
   }
+}
+
+/* Tighter integration with Rouge container */
+div.highlighter-rouge,
+figure.highlight {
+  background-color: var(--global-code-background-color, #2f2f2f);
+  border-color: var(--global-dark-border-color, var(--global-border-color, #555));
+  color: var(--global-code-text-color, #e6e6e6);
+}
+
+figure.highlight pre {
+  color: var(--global-code-text-color, #e6e6e6);
+}
+
+/* Custom scrollbar for code blocks */
+figure.highlight pre::-webkit-scrollbar {
+  height: 8px;
+}
+figure.highlight pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.08);
+}
+figure.highlight pre::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 999px;
+}
+figure.highlight pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Dark theme scrollbar override */
+html[data-theme="dark"] figure.highlight pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] figure.highlight pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+}
+html[data-theme="dark"] figure.highlight pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
