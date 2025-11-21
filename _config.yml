@@ -80,11 +80,11 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  conferences:
+  - key: conferences
     title: 'Conference Papers'
-  manuscripts:
+  - key: manuscripts
     title: 'Journal Articles'
-  books:
+  - key: books
     title: 'Books'
 
 # Site Settings
