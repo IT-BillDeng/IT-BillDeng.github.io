@@ -68,6 +68,10 @@ layout: default
           {% highlight bibtex %}{{ page.bibtex | strip }}{% endhighlight %}
         {% endif %}
 
+        {% if page.doi %}
+          <p class="page__meta"><strong>DOI:</strong> <a href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a></p>
+        {% endif %}
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
