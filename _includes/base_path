@@ -1,4 +1,11 @@
-{% if site.url %}
+{% comment %}
+  In development we want assets to be served from the local server instead of the
+  production domain to avoid missing CSS/JS when offline. Production keeps the
+  absolute URL for canonical links and feeds.
+{% endcomment %}
+{% if jekyll.environment == "development" %}
+  {% assign base_path = site.baseurl %}
+{% elsif site.url %}
   {% assign base_path = site.url | append: site.baseurl %}
 {% else %}
   {% assign base_path = site.github.url %}
