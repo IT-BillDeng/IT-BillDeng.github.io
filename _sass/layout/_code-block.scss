@@ -1,0 +1,28 @@
+.code-header {
+  font-size: 0.9rem;
+  margin: 0 0 0.35em 0;
+  color: var(--global-text-color, #444);
+  font-weight: 600;
+}
+
+.highlight {
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  overflow: visible;
+
+  pre {
+    margin: 0;
+    background: var(--global-code-background-color, #f7f7f7);
+    border: 1px solid var(--global-border-color, #e0e0e0);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    color: var(--global-code-text-color, #2b2b2b);
+    font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    overflow-x: auto;
+  }
+}
