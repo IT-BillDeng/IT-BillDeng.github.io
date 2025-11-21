@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Yushan Deng | Computer Vision"
+title                    : "Yushan Deng | TamaYama"
 title_separator          : "-"
 name                     : &name "Yushan Deng"
 description              : &description "personal description"
@@ -28,7 +28,7 @@ author:
   bio              : "Master student"
   location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
-  uri              : # URL
+  uri              : "https://tamayama.xyz/"
   email            : "dengysh23@sjtu.edu.cn"
 
   # Academic websites
