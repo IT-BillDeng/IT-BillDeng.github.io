@@ -66,8 +66,6 @@ layout: default
         {% if page.bibtex %}
           <div class="code-header">BibTeX</div>
           {% highlight bibtex %}{{ page.bibtex | strip }}{% endhighlight %}
-        {% elsif page.citation %}
-          <p style="font-size: smaller">{{ page.citation }}</p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
