@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<p><a href="{{ site.baseurl }}/files/resume-en.pdf" target="_blank">Download PDF CV (EN)</a> | <a href="{{ site.baseurl }}/files/resume-zh_CN%20-%2020250817.pdf" target="_blank">下载中文简历 (CN)</a></p>
+
 
 <!-- Contact
 ======
