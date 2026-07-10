@@ -32,7 +32,7 @@ This repository hosts my academic/personal website (Jekyll + Minimal Mistakes/Ac
    ```
 
 ## Deploy
-Push to the `main` branch; GitHub Pages builds and serves at `https://<username>.github.io`.
+Open a pull request into `master`; GitHub Actions builds the Jekyll site for review. After the pull request is merged, GitHub Actions deploys the site to `https://<username>.github.io`.
 
 ## Repo layout
 - `_pages/` — Home, CV, and custom pages.
