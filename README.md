@@ -42,7 +42,7 @@ Open a pull request into `master`; GitHub Actions builds the Jekyll site for rev
 - `assets/` — Images and static assets.
 
 ## Contact
-- Email: dengysh23@sjtu.edu.cn
+- Email: it.billdeng@gmail.com
 - ORCID: 0009-0001-0270-3266
 
 ## License

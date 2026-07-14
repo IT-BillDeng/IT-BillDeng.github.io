@@ -25,11 +25,11 @@ author:
   avatar           : "Onimai_comic_clean_square.png"
   name             : "Yushan Deng"
   pronouns         : # example: "she/her"  
-  bio              : "Master student"
+  bio              : "M.Eng. graduate applying for 2027 PhD programs"
   location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
   uri              : "https://tamayama.xyz/"
-  email            : "dengysh23@sjtu.edu.cn"
+  email            : "it.billdeng@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -176,12 +176,14 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
