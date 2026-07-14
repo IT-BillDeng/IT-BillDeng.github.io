@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-<p><a href="{{ site.baseurl }}/files/resume-en.pdf" target="_blank">Download PDF CV (EN)</a> | <a href="{{ site.baseurl }}/files/resume-zh_CN%20-%2020250817.pdf" target="_blank">下载中文简历 (CN)</a></p>
+<p><a href="{{ site.baseurl }}/files/resume-en.pdf" target="_blank">Download PDF CV (EN)</a> | <a href="{{ site.baseurl }}/files/resume-zh_CN.pdf" target="_blank">下载中文简历 (CN)</a></p>
 
 
 <!-- Contact
 ======
 * Phone: +86 176-8821-2696
-* Email: [dengysh23@sjtu.edu.cn](mailto:dengysh23@sjtu.edu.cn)
+* Email: [it.billdeng@gmail.com](mailto:it.billdeng@gmail.com)
 * ORCID: [0009-0001-0270-3266](https://orcid.org/0009-0001-0270-3266) -->
 
 Education
@@ -29,11 +29,12 @@ Education
   Key courses: Data Structures and Algorithms, Operating Systems, Embedded Systems and Design, Computer Vision, NLP, IoT, Deep Learning, Software Engineering, Computer Networks.
 
 
-<!-- Publications
+Publications
 ======
 * Deng, Yushan; Jiang, Yuqiu; Hong, Yi. "DiffLGE: Diffusion-Based Image Generation for Synthesizing Late Gadolinium Enhancement Scans." IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2024.
-* Ye, Huping*; Deng, Yushan*; Hong, Yi. "Epicardial Adipose Tissue Segmentation in MRIs Using Text-Prompted Pretraining Model." IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2024.
-* Lei, Chaofan; Li, Jun; Deng, Yushan; Tan, Xiaojun. "RRT*ASV: Improved RRT* Path Planning Method for Ackermann Steering Vehicles." Expert Systems With Applications, 2025, Art. no. 127349. -->
+* Ye, Huping\*; Deng, Yushan\*; Hong, Yi. "Epicardial Adipose Tissue Segmentation in MRIs Using Text-Prompted Pretraining Model." IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2024.
+* Chen, Qiuhui; Deng, Yushan; Yao, Xuancheng; Hong, Yi. "AD-Reasoning: Multimodal Guideline-Guided Reasoning for Alzheimer's Disease Diagnosis." IEEE International Conference on Multimedia and Expo (ICME), 2026.
+* Lei, Chaofan; Li, Jun; Deng, Yushan; Tan, Xiaojun. "RRT\*ASV: Improved RRT\* Path Planning Method for Ackermann Steering Vehicles." Expert Systems With Applications, 2025, Art. no. 127349.
 
 Projects
 ======
@@ -41,12 +42,19 @@ Projects
   Proposed DiffLGE to synthesize high-quality LGE CMR images without gadolinium contrast; conditioned a stable diffusion framework on CINE and T1 mapping data.
 * **Epicardial Adipose Tissue Segmentation in MRIs Using Text-Prompted Pretraining Model**, 2024  
   Adapted SAM with text prompts for EAT segmentation; leveraged public datasets, pseudo-labeling, and fine-tuning on private data to handle scarcity.
+* **AD-Reasoning: Guideline-Guided Multimodal AD Diagnosis**, 2026<br>
+  Built AD-MultiSense, a 10,378-visit multimodal AD diagnostic QA dataset integrating structural MRI with six clinical modalities and guideline-validated rationales. Developed AD-Reasoning with bidirectional cross-attention, LoRA tuning, and GRPO verifiable rewards, reaching 93.33% / 92.82% accuracy on CN-vs-CI and CN-vs-MCI.
+* **agent-trading: Multi-agent Trading Research Framework**, 2026<br>
+  Built a Python research framework integrating rule/factor engines, backtesting, broker-adapter boundaries, JSONL audit logs, and a local FastAPI dashboard, with preview-only execution and disabled live submission/cancellation as safety defaults.
 * **3D Medical Image Report Generation Based on Vision-Language Mixture of Expert Model**, 2025  
   Combined vision-language large models to generate clinical reports for 3D medical images; optimized pipeline and mixture-of-experts design for quality.
 * **Path Planning for Vehicles Based on Improved RRT* Algorithm** (Undergraduate Thesis), 2023  
   Integrated Ackermann steering constraints, used Dijkstra on road networks for shortest paths, and pruned RRT* search space to accelerate convergence.
 * **Intelligent Vehicle Technology Verification Platform**, 2022  
   Guangdong Provincial Department of Science and Technology 2020 Major Project: built motion capture/positioning, deployed embedded system, debugged hardware, and designed line-following algorithm.
+
+Earlier Projects
+======
 * **One-stop Information Subscription Platform for University Students (WeChat Mini Program)**, 2022  
   Published class/course announcements and managed assignment notifications; piloted with 200+ users. Led planning, architecture, full-stack development, and white-box testing.
 * **Real-time Detection of Insulator Defects on Transmission Lines Based on a Lightweight Improved YOLOv5s Algorithm**, 2022  
@@ -54,6 +62,8 @@ Projects
 
 Experience
 ======
+* Zelos (Suzhou) Technology Co., Ltd., Algorithm Engineer, Aug 2025 - Oct 2025<br>
+  Contributed to multimodal 3D object detection and tracking for autonomous driving. Validated a point-cloud/image fusion framework covering range alignment, BEV-query fusion, multi-sweep aggregation, and MV2D/MV2DFusion integration against the PF-Track baseline.
 * Guangzhou Zhiwei Technology Co., Ltd., Algorithm Engineer, Jul 2022 - Aug 2022  
   Developed embedded systems for intelligent vehicles; engineered dual-lookahead pure pursuit for path tracking and a PID-based front wheel steering control to reduce virtual position errors from mechanical backlash.
 
@@ -69,5 +79,5 @@ Campus Experience
 Skills
 ======
 * Programming: Python, C++, JavaScript, MATLAB, C#, LaTeX
-* Languages: Mandarin, English, Cantonese, Japanese
+* Languages: Mandarin, English (TOEFL 4.5/6.0), Cantonese, Japanese
 * Other: Git, Docker
