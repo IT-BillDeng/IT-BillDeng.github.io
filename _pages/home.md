@@ -7,43 +7,39 @@ redirect_from:
   - /home.html
 ---
 
-## 🎯 What I'm Looking For
-Applying for PhD programs for Spring and Fall 2027 and seeking advisors working on image and video generation, generative modeling, and multimodal learning. I am particularly interested in controllable, temporally consistent, and data-efficient generation, with applications to medical imaging and autonomous-driving scenarios.
+## 🔍 Research Direction
+I study action-conditioned generative world models for closed-loop autonomous-driving simulation. My longer-term goal is to connect auditable state-level evaluation with richer 3D/4D and visual world models, and to study whether their reactive predictions are reliable enough for policy training and safety evaluation.
 
-## 🔍 Research Interests
-Generative modeling for images and videos, with a focus on diffusion models, controllable and multimodal generation, and temporally consistent visual synthesis. I am interested in improving the fidelity, controllability, and data efficiency of generative models, and in applying them to medical imaging and autonomous-driving scenarios for data synthesis, representation learning, and robust perception.
+## 🧪 Current Work
+I am developing and testing **BranchDrive-State**, a state-first, CARLA-based paired-intervention benchmark. It asks a concrete question: when matched branches share the same initial state and exogenous conditions but differ only in the ego action, can a model predict the correct per-entity effects while preserving unaffected entities, stable identities, and scene structure?
+
+## 🎯 PhD Interests
+I am applying to PhD programs for Spring and Fall 2027 and seeking advisors working on generative modeling and world models, 3D/4D scene understanding, autonomous or embodied systems, and simulation and evaluation.
 
 ## 📰 Selected Publications
 
-1. **DiffLGE**: Diffusion-based LGE CMR synthesis with CINE + T1 conditioning; outperforms GAN baselines on private cohort. *IEEE BIBM 2024*.
+1. **DiffLGE**: Diffusion-based LGE CMR synthesis with CINE + T1 conditioning; outperforms GAN baselines on a private cohort. *IEEE BIBM 2024*.
 2. **Text-Prompted EAT Segmentation**: SAM adaptation with text prompts + pseudo-mask augmentation for data-scarce cardiac MRI. *IEEE BIBM 2024*.
 3. **AD-Reasoning**: Guideline-guided multimodal reasoning for Alzheimer's disease diagnosis using structural MRI and six clinical modalities. *IEEE ICME 2026*.
 4. **RRT\*ASV**: Road-network seeded, PP/Dubins-guided RRT* variant; achieves 0.025 m lateral error and cuts controller load by 60.66%. *Expert Systems With Applications, 2025*.
 
 <p style="margin-top:-0.7em"><a href="/publications/">Full list →</a></p>
 
-## 🚀 Highlighted Projects
-- **DiffLGE**: Stable-diffusion pipeline conditioned on CINE + T1 mapping to synthesize high-quality LGE images without contrast agents.
-- **Text-Prompted Cardiac MRI Segmentation**: Vision-language pretraining (SAM adaptation) with pseudo-label augmentation for scarce EAT labels.
-- **AD-Reasoning**: Guideline-guided multimodal AD diagnosis with bidirectional cross-attention, LoRA tuning, and GRPO verifiable rewards; reached 93.33% / 92.82% accuracy on CN-vs-CI and CN-vs-MCI.
-- **agent-trading**: Multi-agent trading research framework with rule/factor engines, backtesting, broker-adapter boundaries, JSONL audit logs, and a local FastAPI dashboard.
-- **3D Medical Report Generation**: Mixture-of-experts vision-language framework for automatic structured clinical reporting.
-- **RRT\* Path Planning**: Road-network graph + Dijkstra seeding, PP/Dubins-guided RRT* variant to reduce sharp turns; lowers lateral tracking error and controller load for Ackermann vehicles.
-- **LiDAR-Camera 3D Object Detection and Tracking** (Zelos internship, Aug-Oct 2025): Validated point-cloud/image fusion with range alignment, BEV-query fusion, multi-sweep aggregation, and MV2D/MV2DFusion integration against the PF-Track baseline.
+## 🧭 Background & Selected Experience
+My background spans generative and multimodal learning, autonomous-driving perception, and vehicle planning and control. These experiences motivate a state-first route toward interactive world models.
 
-<!-- ## 🗓️ Recent News
-- 2025-08 Preparing manuscript on multi-modal diffusion conditioning.
-- 2025-06 Progressed 3D report generation MoE prototype.
-- 2024-12 Two papers accepted at IEEE BIBM 2024. -->
+- **Generative and multimodal learning**: Diffusion-based medical image synthesis, text-prompted segmentation, multimodal clinical reasoning, and 3D medical report generation.
+- **Autonomous-driving perception**: At Zelos, contributed to LiDAR-camera 3D object detection and tracking, including range alignment, BEV-query fusion, multi-sweep aggregation, and MV2D/MV2DFusion integration against the PF-Track baseline.
+- **Vehicle planning and control**: Worked on kinematics-aware RRT* path planning, Ackermann-vehicle tracking, and embedded steering control.
 
 ## 🛠️ Skills Snapshot
-**Programming**: Python, C++  
-**Models/Frameworks**: Diffusion Model, SAM, Vision-Language Model  
-**Other**: Git, Docker, LaTeX, ROS  
-**Languages**: Mandarin (native), English (TOEFL 4.5/6.0), Cantonese (native), Japanese<br>
+**Programming**: Python, C++<br>
+**Models/Frameworks**: Diffusion models, SAM, vision-language models<br>
+**Other**: Git, Docker, LaTeX, ROS<br>
+**Languages**: Mandarin (native), English (TOEFL 4.5/6.0), Cantonese (native), Japanese
 
 
 ## 📬 Contact
 Best via email: <a href="mailto:it.billdeng@gmail.com">it.billdeng@gmail.com</a>. Feel free to reference any repository or paper in the subject for quicker context.
 
-<p style="font-size:0.75em;opacity:0.7">Last updated: {{ site.time | date: '%Y-%m-%d' }}</p>
+<p style="font-size:0.75em;opacity:0.7">Last updated: 2026-08-24</p>

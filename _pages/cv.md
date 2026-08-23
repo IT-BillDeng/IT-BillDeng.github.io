@@ -18,6 +18,12 @@ redirect_from:
 * Email: [it.billdeng@gmail.com](mailto:it.billdeng@gmail.com)
 * ORCID: [0009-0001-0270-3266](https://orcid.org/0009-0001-0270-3266) -->
 
+Research Focus
+======
+I study action-conditioned generative world models for closed-loop autonomous-driving simulation, with longer-term interests in 3D/4D and visual world models for policy training and safety evaluation.
+
+* **BranchDrive-State** (ongoing research) — I am developing and testing a state-first paired-intervention benchmark that asks whether matched branches differing only in the ego action produce the correct per-entity effects while preserving unaffected entities, stable identities, and scene structure.
+
 Education
 ======
 * **Shanghai Jiao Tong University** — Master of Engineering, Computer Science (GPA 3.3/4.0)  
