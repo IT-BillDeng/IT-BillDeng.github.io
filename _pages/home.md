@@ -10,9 +10,6 @@ redirect_from:
 ## 🔍 Research Direction
 I study action-conditioned generative world models for closed-loop autonomous-driving simulation. My longer-term goal is to connect auditable state-level evaluation with richer 3D/4D and visual world models, and to study whether their reactive predictions are reliable enough for policy training and safety evaluation.
 
-## 🧪 Current Work
-I am developing and testing **BranchDrive-State**, a state-first, CARLA-based paired-intervention benchmark. It asks a concrete question: when matched branches share the same initial state and exogenous conditions but differ only in the ego action, can a model predict the correct per-entity effects while preserving unaffected entities, stable identities, and scene structure?
-
 ## 🎯 PhD Interests
 I am applying to PhD programs for Spring and Fall 2027 and seeking advisors working on generative modeling and world models, 3D/4D scene understanding, autonomous or embodied systems, and simulation and evaluation.
 
